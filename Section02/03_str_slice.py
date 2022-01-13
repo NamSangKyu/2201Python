@@ -26,9 +26,12 @@ print(tel1[-4:])
 print(tel2[-4:])
 
 #tel1과 tel2의 뒷자리 4자리만 제외하고 추출해서 출력
+print(tel1[:-4])
+print(tel2[:-4])
 
-
-
+#마이너스 인덱스를 사용하지 않고 추출
+print(tel1[:len(tel1)-4])
+print(tel2[:len(tel2)-4])
 
 
 
