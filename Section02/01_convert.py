@@ -19,7 +19,25 @@ print(int('200'))
 #print(int('3.1415'))
 print(int(True))
 print(int(False))
-
-
+'''
+2. 실수로 형변환
+    - float(20) ---> 20.0
+    - float('3.1415') ---> 3.1415
+    - float('20') ---> 20.0
+    - float(False) ---> 0.0
+    - float(True) ---> 1.0
+'''
+print(float(20))
+print(float("3.1415"))
+print(float('20'))
+print(float(False))
+print(float(True))
+'''
+3. 문자열로 형변환
+    - str(값)
+'''
+print(str(111))
+print(str(3.1415))
+print(str(True))
 
 
