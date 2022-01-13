@@ -27,6 +27,41 @@ print(list1,list2)
 #리스트1의 마지막 데이터 2개 추출
 print(list1[-2:])
 
+#추가, 삭제, 수정
+#리스트에 데이터 추가, 맨뒤에 추가
+list1.append("Test")
+list1.append(100)
+print(list1)
+#3번 인덱스에 데이터를 끼워 넣기, 한칸씩 뒤로 밀림
+list1.insert(3,111)
+print(list1)
+#수정
+list1[3] = 'Hello'
+print(list1)
+#리스트 6번 인덱스 값을 'Hello'로 수정
+list1[6] = 'Hello'
+print(list1)
+#삭제
+#pop은 인덱스 번호에 해당하는 데이터를 삭제
+#인덱스 번호를 안쓰면 마지막 데이터를 삭제
+list1.pop()
+print(list1)
+# 1번 인덱스에 해당하는 데이터를 삭제
+list1.pop(1)
+print(list1)
+#리스트 데이터 삭제시 데이터를 검색해서 삭제
+list1.remove('Test')
+print(list1)
+# Hello 데이터 삭제
+list1.remove('Hello') #최초 검색된 1개 데이터를 삭제
+print(list1)
+#World 데이터가 있는 인덱스 번호
+print(list1.index('World'))
+#print(list1.index('Test')) #데이터가 없으면 에러
+
+#전체 데이터 삭제
+list1.clear()
+print(len(list1))
 
 
 
