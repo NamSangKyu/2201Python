@@ -39,5 +39,21 @@ print(float(True))
 print(str(111))
 print(str(3.1415))
 print(str(True))
+'''
+4. 논리값으로 형변환
+    - bool(0) ---> False
+    - bool(0이 아닌 숫자) ---> True
+    - bool('Hello') ---> True
+    - bool('') ---> False 
+'''
+print(bool(0))
+print(bool(1))
+print(bool(-1))
+print(bool('Hello'))
+print(bool(''))
+
+
+
+
 
 
