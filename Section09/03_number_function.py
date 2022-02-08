@@ -24,6 +24,12 @@ print(round(156.123456,2))
 print(round(156.123456,4))
 print(round(156.123456,-1))
 print(round(156.123456,-2))
+#총합 함수
+list1 = [12,4,53,42,12,11,4,5,34,3]
+list2 = ['H','e','l','l','o']
+print(sum(list1))
+#숫자 이외의 값은 sum 함수를 사용할수 없음, 에러처리
+#print(sum(list2))
 
 
 
