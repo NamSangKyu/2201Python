@@ -21,7 +21,11 @@ print(sorted(list1,reverse=True))
 print(sorted(list1,reverse=False))
 list2 = ['F','G','Z','A','B','E']
 print(sorted(list2))
-
+#zip - 각 리스트별 한개씩 튜플로 합쳐서 리턴 
+list1 = [41,52,67,43,22]
+list2 = ['F','G','Z','A','E']
+for item in zip(list1,list2):
+    print(item)
 
 
 
