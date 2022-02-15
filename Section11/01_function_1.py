@@ -30,6 +30,12 @@ printPersonInfo("홍길동",20)
 #매개변수 개수만큼 데이터를 안보내면 에러
 #printPersonInfo("홍길동")
 
+#인수 O, 반환값 O
+def sum(n1,n2):
+    result = n1 + n2
+    return result
+
+print(sum(10,20))
 
 
 
