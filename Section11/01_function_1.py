@@ -27,6 +27,8 @@ def printPersonInfo(name,age):
     print(f'{name}님의 나이가 {age}살 입니다.')
 
 printPersonInfo("홍길동",20)
+#매개변수 개수만큼 데이터를 안보내면 에러
+#printPersonInfo("홍길동")
 
 
 
