@@ -14,3 +14,10 @@ def printMessage(msg='안녕하세요'):
 printMessage()
 printMessage('만나서 반갑습니다.')
 
+#매개변수에 디폴트 값을 설정할때는
+#반드시 오른쪽 끝에서부터 설정
+def printNumbers(n1,n2=10):
+    print(n1,n2)
+printNumbers(20)
+
+
