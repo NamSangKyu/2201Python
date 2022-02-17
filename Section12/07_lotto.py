@@ -10,3 +10,5 @@ while len(lotto_set) < 6:
         continue
     lotto_set.add(n)
 print('입력한 로또번호 목록 : {}'.format(lotto_set))
+
+
