@@ -17,3 +17,28 @@ winning_lotto_numbers = r.sample(range(1,46),7)
 print('당첨된 로또번호 목록 : {}'.format(winning_lotto_numbers))
 
 #당첨 등수 및 낙첨 정보 출력
+count = 0 #일치하는 번호 개수
+for i in range(len(winning_lotto_numbers)-1):
+    if winning_lotto_numbers[i] in lotto_set:
+        count += 1
+
+if count == 6:
+    print("1등에 당첨 되셨습니다.");
+elif count == 5 and winning_lotto_numbers[-1] in lotto_set:
+    print("2등에 당첨 되셨습니다.");
+elif count == 5:
+    print("3등에 당첨 되셨습니다.");
+elif count == 4:
+    print("4등에 당첨 되셨습니다.");
+elif count == 3:
+    print("5등에 당첨 되셨습니다.");
+else:
+    print("낙첨 되셨습니다.");
+    
+
+
+
+
+
+
+
