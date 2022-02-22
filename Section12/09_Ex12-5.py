@@ -34,6 +34,14 @@ date2 = dt.date(2022,2,23)
 print(date2-date1)
 print((date2-date1).total_seconds()/(24 * 60 * 60))
 
+#오늘 날짜를 기준으로 수능까지의 D-day 출력
+date2 = dt.date(2022,11,17)
+print((date2-date1).total_seconds()/(24 * 60 * 60))
+#오늘 날짜를 기준으로 연말까지의 D-day 출력
+date2 = dt.date(2022,12,31)
+print((date2-date1).total_seconds()/(24 * 60 * 60))
+
+
 
 
 
