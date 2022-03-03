@@ -33,7 +33,7 @@ class Student:
             return "F"
 
     def print_student_info(self):
-        print(f'{self.sno}\t{self.name}\t{self.major}\t{self.score}()')
+        print(f'{self.sno}\t{self.name}\t{self.major}\t{self.score}({self.get_grade()})')
 
 student = Student()
 student.setting_data('20211111', '홍길동', '컴퓨터공학과', 3.45)
