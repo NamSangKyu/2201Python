@@ -7,6 +7,7 @@
         method
             init --> 전원, 채널, 음량 필드를 선언하고 초기화하는 메서드
             채널Up --> 실행 할때마다 채널 값을 증가, 마지막 채널값에서 증가하면 처음 채널로 이동
+            채널Down --> 실행 할때마다 채널 값을 감소, 처음 채널에서 감소하면 마지막 채널로 이동
 '''
 class TV:
     def init(self):
@@ -22,11 +23,19 @@ class TV:
             self.__ch = 1
         print(f'현재 채널 : {self.__ch}')
 
+    def ch_down(self):
+        self.__ch -= 1
+        if self.__ch < 1:
+            self.__ch = 455
+        print(f'현재 채널 : {self.__ch}')
+
 tv = TV()
 tv.init()
-for i in range(500):
-    tv.ch_up()
+# for i in range(500):
+#     tv.ch_up()
 #print(tv.__ch)
+for i in range(50):
+    tv.ch_down()
 
 
 
