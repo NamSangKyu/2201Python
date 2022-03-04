@@ -10,7 +10,8 @@
 '''
 class TV:
     def init(self):
-        # __변수 --> private 멤버 -- 클래스 내부에서만 접근이 가능
+        # self.__변수 --> private 멤버 --> 클래스 내부에서만 접근이 가능
+        # self.변수 --> public 멤버 --> 누구든지 접근이 가능
         self.__power = False
         self.__ch = 24
         self.__vol = 15
