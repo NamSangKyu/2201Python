@@ -14,6 +14,13 @@ y = [2,5,1,5,7,8,9]
 
 axes.bar(x,y)
 axes.plot(x,y,marker='o',color='r')
+
+#차트 제목
+plt.title('WeekDay Call')
+#x축 제목
+plt.xlabel('week')
+#y축 제목
+plt.ylabel('call')
 plt.show()
 
 
